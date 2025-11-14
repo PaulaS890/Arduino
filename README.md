@@ -1,4 +1,8 @@
-# Arduino
+<h1 align="center"><strong>Arduino</strong></h1><br>
+<p align="center">
+  <br><br><img width="300" height="202" alt="Arduino_Logo_Registered svg" src="https://github.com/user-attachments/assets/8376ca18-e5cd-4814-9817-2957fb73f506"/><br><br>
+</p>
+
 
 <details>
 <summary><h2>Introducción</h2></summary>
