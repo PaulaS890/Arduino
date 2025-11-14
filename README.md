@@ -10,15 +10,13 @@
 
 <details>
 <summary><h2>Actividad 0</h2></summary>
-  1. ¿Qué es Arduino?
+1. ¿Qué es Arduino?<br>
+<br>Arduino es un microprocesador que te permite programarlo para hacer las cosas que quieras. <br>
+  
+<br>2. ¿Cuáles son sus características más importantes?<br>
+<br>Arduino tiene muchísimas características únicas, pero, en específico, considero que las más importantes son las siguientes:<br>
 
-Arduino es un microprocesador que te permite programarlo para hacer las cosas que quieras. 
-
-2. ¿Cuáles son sus características más importantes?
-
-Arduino tiene muchísimas características únicas, pero, en específico, considero que las más importantes son las siguientes:
-
-Existe de forma física y de forma digital, es decir, hay programas que te permiten simular lo que hace una placa física en forma digital o bien también existen placas físicas. Esto nos viene bien sobre todo a la hora de querer hacer algo para poder probarlo y hacer una esquematización antes de llevarlo a la realidad.
+<br><li>Existe de forma física y de forma digital, es decir, hay programas que te permiten simular lo que hace una placa física en forma digital o bien también existen placas físicas. Esto nos viene bien sobre todo a la hora de querer hacer algo para poder probarlo y hacer una esquematización antes de llevarlo a la realidad.<br>
 
 Ambas versiones deben ser programadas, con la ventaja que si es de forma digital, se puede llegar a programar con bloques de programación en cambio de su lenguaje de programación nativo (C o C + +).
 
