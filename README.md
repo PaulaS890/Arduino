@@ -55,6 +55,7 @@ Arduino IDE es el programa oficial que se usa para la programaci√≥n y compilaci√
 
 <details>
 <summary><h2>Conclusiones</h2></summary>
+.
 </details>
 
 <details>
