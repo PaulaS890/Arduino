@@ -74,15 +74,25 @@ El objetivo de esta práctica es el de aprender cómo funcionan los LED y hacer 
 
 <h3>Código utilizado</h3>
 #define LED1 2 //declaración componente
+
 void setup() { //declaraciones fijas, no le hace falta bucle
+
 pinMode (LED1, OUTPUT); //declaramos que es una salida
+
 } 
+
 void loop() { //el bucle que se repite
+
 digitalWrite(LED1, HIGH);  //encendemos led
+
 delay(1000);  //esperamos 1seg
+
 digitalWrite(LED1, LOW); //apagamos led
+
 delay(1000); //esperamos 1 seg
-	}
+
+}
+	
 
 
 <h3>Esquema</h3>
@@ -98,22 +108,39 @@ https://github.com/user-attachments/assets/37f2a64e-26c6-4785-b794-0118e580dc65
 
 <H3>Preguntas</H3>
 • ¿Qué son el void setup() and void loop() ? 
+
 Void setup se encarga de recopilar la configuración del programa, mientras que void loop es el código que se ejecutará en bucle.
+
 • ¿Qué quiere decir la línea: #define LED_BUITIN 2 ? 
+
 Se define que el led está en el pin digital 2 bajo el nombre LED_BUITIN.
+
 • ¿Qué quiere decir la línea delay(1000); ? 
+
 Esa línea son los milisegundos de espera que hay para ejecutar la siguiente orden.
+
 • Buscar información de cada función del script en: https://www.arduino.cc/reference/en/ ? 
+
 pinMode OUTPUT: Establece el pin seleccionado como salida.
+
 Delay: rato de espera para ejecutar la siguiente orden.
+
 DigitalWrite HIGH/LOW: Aumenta o disminuye el voltaje para que el led se encienda o se apague.
+
 • Selecciona el extremo del jumper que está en el pin 2 y conéctalo donde dice 5V. ¿Qué ocurre con el led: parpadea?
+
 El LED sí que parpadea, ya que es lo que le indicamos en el código, aparte, las conexiones están 
+
 bien conectadas, es decir, los polos positivos donde deben ir y los polos negativos donde deben ir.
+
 • Conecta cada cable o jumper al polo (-) o GND y al polo (+) de la pila. ¿Qué ocurre con el led: parpadea?
+
 No, en este caso el LED no parpadeará, se quedará o bien encendido fijo o bien apagado fijo, ya
+
 que dependiendo de cómo se conecte (es decir, si le cambiamos los polos) el LED no hará la
+
 función que le hemos dicho que haga, si no que se quedará o bien encendido o bien apagado.
+
 
 </details>
 
@@ -132,29 +159,51 @@ Para hacer el semáforo, es tan sencillo como añadir dos LEDs más con sus resp
 
 <h3>Código utilizado</h3>
 #define LED1 2 //declaración led amarillo
+
 #define LED2 15 //declaración led rojo 
+
 #define LED3 0 //declaración led verde 
 
 
+
 void setup() { 
+
 // Definimos los pines como salida.
+
 pinMode (LED1, OUTPUT); 
+
 pinMode (LED2, OUTPUT); 
+
 pinMode (LED3, OUTPUT); 
+
 } 
+
 void loop() { 
+
 digitalWrite(LED1, HIGH);   // Aumentamos la carga para que se encienda el LED
+
 delay(1000); 			          // Espera de 1 segundo
+
 digitalWrite(LED1, LOW);    // Disminuimos la carga para que se apague el LED
+
 delay(1000); 
+
 digitalWrite(LED2, HIGH); 
+
 delay(1000); 
+
 digitalWrite(LED2, LOW); 
+
 delay(1000); 
+
 digitalWrite(LED3, HIGH); 
+
 delay(1000); 
+
 digitalWrite(LED3, LOW); 
+
 delay(1000); 
+
 }
 
 <h3>Esquema</h3>
