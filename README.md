@@ -219,19 +219,26 @@ https://github.com/user-attachments/assets/ef3f6fd2-4b6c-4a06-a335-bbe9cdff9fa1
 
 
 <details>
-<summary><h3>Actividad 3</h3></summary>
+<summary><h2>Actividad 3</h2></summary>
 <h3>Objetivo de la actividad</h3>
 Para este ejercicio debemos montar un circuito que encienda una bombilla mientras mantengamos un botón pulsado. Cuando no lo esté, la bombilla debe permanecer apagada
 
 <h3>Materiales necesarios</h3>
+
 • Placa de arduino
+
 • Resistencias
+
 • LEDs
+
 • Cables
+
 • Botón
+
 
 <h3>Código utilizado</h3>
 
+```
 void setup() {
 
   pinMode(2, OUTPUT);
@@ -245,16 +252,16 @@ void loop() {
 
   if(digitalRead(13) == LOW) {
   
-    digitalWrite(2, HIGH);
+digitalWrite(2, HIGH);
 	
   } else {
   
-    digitalWrite(2, LOW);
+digitalWrite(2, LOW);
 	
   }
   
 }
-
+```
 <h3>Esquema</h3>
 <img width="696" height="631" alt="image" src="https://github.com/user-attachments/assets/b26c3592-785b-4634-92b3-5ed23338a09c" />
 
@@ -265,19 +272,58 @@ void loop() {
 
 https://github.com/user-attachments/assets/7d99913c-f2fd-4895-8cb4-7e18441ce309
 
-<summary><h3>Actividad 3</h3></summary>
+<h3>Preguntas</h3>
+
+```
+int i = 0;
+
+void setup() {
+	for(i=11; i<14; i++)
+	pinMode(i, OUTPUT);
+}
+
+void loop() {
+	for(i=11; i<14; i++){
+		digitalWrite(i, HIGH);
+		delay(1000);
+		digitalWrite(i, LOW);
+		delay(1000);
+	}
+}
+```
+<h4>¿Para qué sirve el FOR?</h4>
+FOR sirve para crear bucles que se repiten hasta que se cumple cierta condición.
+
+<h4>¿Cuáles son los pines de los leds?</h4>
+Los pines de los leds son el 11, el 12 y el 13.
+
+<h4>¿Qué hace el código?</h4>
+El código repite un bucle de parpadeo hasta que se alcance el pin 13. Al llegar el valor a 14 se detiene y rompe el ciclo.
+
+
+</details>
+<details>
+<summary><h2>Actividad 4</h2></summary>
+
 <h3>Objetivo de la actividad</h3>
 Para este ejercicio utilizaremos el mismo circuito que en la actividad anterior, pero deberemos cambiar el código para que el led se mantenga encendido al pulsar el botón y se apague únicamente al vovler a presionarlo.
 
 <h3>Materiales necesarios</h3>
+
 • Placa de arduino
+
 • Resistencias
+
 • LEDs
+
 • Cables
+
 • Botón
+
 
 <h3>Código utilizado</h3>
 
+```
 bool ledOn = false;
 
 
@@ -295,20 +341,20 @@ void loop() {
 
   if (digitalRead(13) == LOW) {
   
-    delay(50); // Anti-rebotes
+delay(50); // Anti-rebotes
 	
-    ledOn = !ledOn; // Invertir estado
+edOn = !ledOn; // Invertir estado
 	
-    digitalWrite(2, ledOn ? HIGH : LOW);
+digitalWrite(2, ledOn ? HIGH : LOW);
 	
-    while(digitalRead(13) == LOW); // Esperar a soltar
+while(digitalRead(13) == LOW); // Esperar a soltar
 	
-    delay(50);
+delay(50);
 	
   }
   
 }
-
+```
 
 <h3>Esquema</h3>
 <img width="696" height="631" alt="image" src="https://github.com/user-attachments/assets/b26c3592-785b-4634-92b3-5ed23338a09c" />
@@ -319,6 +365,11 @@ void loop() {
 
 
 https://github.com/user-attachments/assets/89cbb973-3c11-4399-8b44-2ebc3a76da11
+
+<h3>Preguntas</h3>
+
+<h4>¿Qué pasa si se quita una resistencia del circuito?</h4>
+Si quitamos una resistencia del circuito, este se sobrecalentará y la bombilla se quemará.
 
 </details>
 
