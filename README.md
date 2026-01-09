@@ -217,6 +217,111 @@ https://github.com/user-attachments/assets/ef3f6fd2-4b6c-4a06-a335-bbe9cdff9fa1
 
 </details>
 
+
+<details>
+<summary><h3>Actividad 3</h3></summary>
+<h3>Objetivo de la actividad</h3>
+Para este ejercicio debemos montar un circuito que encienda una bombilla mientras mantengamos un botón pulsado. Cuando no lo esté, la bombilla debe permanecer apagada
+
+<h3>Materiales necesarios</h3>
+• Placa de arduino
+• Resistencias
+• LEDs
+• Cables
+• Botón
+
+<h3>Código utilizado</h3>
+
+void setup() {
+
+  pinMode(2, OUTPUT);
+  
+  pinMode(13, INPUT);
+  
+}
+
+
+void loop() {
+
+  if(digitalRead(13) == LOW) {
+  
+    digitalWrite(2, HIGH);
+	
+  } else {
+  
+    digitalWrite(2, LOW);
+	
+  }
+  
+}
+
+<h3>Esquema</h3>
+<img width="696" height="631" alt="image" src="https://github.com/user-attachments/assets/b26c3592-785b-4634-92b3-5ed23338a09c" />
+
+
+<h3>Foto y vídeo</h3>
+<img width="1270" height="694" alt="image" src="https://github.com/user-attachments/assets/b80c11b1-f10d-4f30-9a56-3a1ddaaf1145" />
+
+
+https://github.com/user-attachments/assets/7d99913c-f2fd-4895-8cb4-7e18441ce309
+
+<summary><h3>Actividad 3</h3></summary>
+<h3>Objetivo de la actividad</h3>
+Para este ejercicio utilizaremos el mismo circuito que en la actividad anterior, pero deberemos cambiar el código para que el led se mantenga encendido al pulsar el botón y se apague únicamente al vovler a presionarlo.
+
+<h3>Materiales necesarios</h3>
+• Placa de arduino
+• Resistencias
+• LEDs
+• Cables
+• Botón
+
+<h3>Código utilizado</h3>
+
+bool ledOn = false;
+
+
+
+void setup() {
+
+  pinMode(2, OUTPUT);
+  
+  pinMode(13, INPUT_PULLUP);
+  
+}
+
+
+void loop() {
+
+  if (digitalRead(13) == LOW) {
+  
+    delay(50); // Anti-rebotes
+	
+    ledOn = !ledOn; // Invertir estado
+	
+    digitalWrite(2, ledOn ? HIGH : LOW);
+	
+    while(digitalRead(13) == LOW); // Esperar a soltar
+	
+    delay(50);
+	
+  }
+  
+}
+
+
+<h3>Esquema</h3>
+<img width="696" height="631" alt="image" src="https://github.com/user-attachments/assets/b26c3592-785b-4634-92b3-5ed23338a09c" />
+
+
+<h3>Foto y vídeo</h3>
+<img width="1270" height="694" alt="image" src="https://github.com/user-attachments/assets/b80c11b1-f10d-4f30-9a56-3a1ddaaf1145" />
+
+
+https://github.com/user-attachments/assets/89cbb973-3c11-4399-8b44-2ebc3a76da11
+
+</details>
+
 <details>
 <summary><h2>Conclusiones</h2></summary>
 .
