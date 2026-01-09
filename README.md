@@ -145,7 +145,7 @@ función que le hemos dicho que haga, si no que se quedará o bien encendido o b
 </details>
 
 <details>
-<summary><h3>Actividad 2</h3></summary>
+<summary><h2>Actividad 2</h2></summary>
 
 <h3>Objetivo de la actividad</h3>
 El objetivo de esta práctica es la de aprender a comprender cómo funciona el LED, saber como conectarlos correctamente y hacerlos funcionar a su respectivo tiempo. En este ejercicio hemos hecho un semáforo, haciendo que cada LED parpadee sin sobreponerse los unos a los otros y hemos hecho que funcione un único LED individual.
