@@ -392,6 +392,7 @@ Un LED normal emite una única luz, mientras que uno RGB puede emitir los tres c
 | Dos pines ánodo y cátodo                                    | Cuatro pines, uno común (ánodo y cátodo) y los otros tres para los colores                                                 |
 | Se enciende o apaga desde un pin digital y una resistencia. | Se controla con pines PWM (pulse width modulation), que simulan voltajes variables ara ajustar la intensidad de cada color |
 
+
 <b>Que ocurriría en caso de invertir los colores del LED RGB por ejemplo que el pin 4 (Rojo) vaya a la pata del LED G(Verde) y el pin 0 a la pata del LED R(Roja). Porque cree que pase esto argumente su respuesta.</b>
 
 El color final deseado cambiaría ya que se modificaría la intensidad con la que brilla cada color.
@@ -402,20 +403,21 @@ El color final deseado cambiaría ya que se modificaría la intensidad con la qu
 Si ponemos la función setColor(red, green, blue) el LED se apagará ya que los pines no estarán definidos.
 
 
+
 <b>¿Qué función tendría que dejar de utilizar para evitar el cambio aleatorio de los colores dentro del ciclo infinito? Explique que hace dicha función.</b>
 
 Para que no haya un cambio aleatorio de colores dentro del ciclo, habría que eliminar la función random(), la cual genera valores diferentes en cada ejecución del loop.
+
 
 <b>Utiliza al menos dos combinaciones de colores (RGB) no aleatorias, que más le guste y donde se observen diferencias y argumente porque cree usted que se observa la tendencia hacia un color determinado. </b>
 
 Los LEDs tienen una tendencia hacia el azul, esto es debido a que los diodos de distintos colores suelen tener una eficiencia distinta, y a que el ojo humano es más sensible a este color.
 
+
 <b>¿Qué sucedería si utilizamos la función aleatoria, pero regulamos los valores de la función random y pasamos los rangos que queremos? ¿Sería una forma de regular la coloración del LED RGB? Explique su respuesta brevemente.</b>
 
 Limitar los valores RGB dentro de la función random() nos serviría para regular qué colores queremos que muestre el LED.
 
-
-<b>Que observa tras cargar y correr el código del programa con respecto a lo que vimos antes. Explique la diferencia y argumente que es el gradiente y que es lo que hace (En el código) que en este ejercicio se pueda observar.</b> 
 
 <b>Explique que es el tipo de dato long y su diferencia con el int y porque se utiliza en el ejercicio</b>
 
@@ -432,13 +434,32 @@ La diferencia principal entre INT y LONG es la cantidad de números enteros que 
 
 <b>Explique el funcionamiento de la función wheel de manera general.</b>
 
+La función wheel() genera un color basado en la posición 0 - 255. Se utiliza para crear el efecto arcoíris en un led RGB.
+
+
 <b>Busque en las referencias para que se utiliza la función ledcWrite() además indique cual es la salida de esta función y qué significado tiene en el código.</b>
 
+ledcWrite() permite controlar el brillo de cada color del LED, permitiéndonos mostrar cualquier color que nosotros queramos (dentro de las limitaciones de los colores luz).
+
+Dentro del código, lo utilizamos para generar una señal específica a los pines que se le indican para mostrar los colores que queramos.
+
+
 <h3>Foto y vídeo</h3>
+
+<H4>Actividad 1</H4>
 
 <img width="599" height="361" alt="image" src="https://github.com/user-attachments/assets/212a6290-5777-45cf-8a8c-c431514502bd" />
 
 https://github.com/user-attachments/assets/76f5c103-d68f-4810-a0b6-65fbe2417a49
+
+<H4>Actividad 2</H4>
+
+<img width="761" height="423" alt="image" src="https://github.com/user-attachments/assets/752e56a0-149c-40f6-bba8-65ea7ee82af0" />
+
+
+
+https://github.com/user-attachments/assets/b9b54b54-c6a0-4439-917e-236055050acc
+
 
 
 </details>
