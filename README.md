@@ -443,6 +443,49 @@ ledcWrite() permite controlar el brillo de cada color del LED, permitiéndonos m
 
 Dentro del código, lo utilizamos para generar una señal específica a los pines que se le indican para mostrar los colores que queramos.
 
+<H3>Código Utilizado</H3>
+<h4>Actividad 3</h4>
+
+```
+const byte ledPins[] = {4, 0, 2};   // Pines RGB
+const byte chns[] = {0, 1, 2};      // Canales PWM
+
+void setup() {
+  for (int i = 0; i < 3; i++) {
+    // Asocia pin + canal + frecuencia + resolución
+    ledcAttach(ledPins[i], 1000, 8);
+  }
+}
+
+void loop() {
+  for (int i = 0; i < 256; i++) {
+    setColor(wheel(i));
+    delay(30);
+  }
+}
+
+void setColor(long rgb) {
+  ledcWrite(ledPins[0], 255 - ((rgb >> 16) & 0xFF)); // Rojo
+  ledcWrite(ledPins[1], 255 - ((rgb >> 8) & 0xFF));  // Verde
+  ledcWrite(ledPins[2], 255 - (rgb & 0xFF));         // Azul
+}
+
+long wheel(int pos) {
+  pos = pos % 256;
+
+  if (pos < 85) {
+    return ((255 - pos * 3) << 16) | ((pos * 3) << 8);
+  } 
+  else if (pos < 170) {
+    pos -= 85;
+    return ((255 - pos * 3) << 8) | (pos * 3);
+  } 
+  else {
+    pos -= 170;
+    return ((pos * 3) << 16) | (255 - pos * 3);
+  }
+}
+```
 
 <h3>Foto y vídeo</h3>
 
@@ -457,10 +500,11 @@ https://github.com/user-attachments/assets/76f5c103-d68f-4810-a0b6-65fbe2417a49
 <img width="761" height="423" alt="image" src="https://github.com/user-attachments/assets/752e56a0-149c-40f6-bba8-65ea7ee82af0" />
 
 
-
 https://github.com/user-attachments/assets/b9b54b54-c6a0-4439-917e-236055050acc
 
+<h4>Actividad 3</h4>
 
+https://github.com/user-attachments/assets/41bdf0b5-4507-4c52-aa48-990a226ebce1
 
 </details>
 
