@@ -377,6 +377,9 @@ Si quitamos una resistencia del circuito, este se sobrecalentará y la bombilla 
 <details>
 <summary><h2>Actividad 5</h2></summary>
 
+<h3>Objetivo de la actividad</h3>
+En esta práctica deberemos investigar sobre el funcionamiento de los LEDs RGB y comprender su diferencia con un LED normal. En arduino tendremos que controlar los colores que queremos que muestre el LED RGB, luego, haremos que vaya cambiando gradualmente entre colores.
+
 <h3>Preguntas</h3>
 
 <b>Analizar y entender la diferencia entre un LED normal a un LED RGB. Para esto pueden crear una pequeña tabla de dos Columnas, donde la cabecera de cada columna serán los dos tipos de LED analizados en clase y que tendrá dos filas asociadas a los elementos comunes y las diferencias entre ellos.</b>
@@ -395,22 +398,27 @@ El color final deseado cambiaría ya que se modificaría la intensidad con la qu
 
 
 <b>Que sucede si comentamos dentro de la función void loop{}, la llamada a la función setColor(red, green, blue). Argumente lo que observa, después de volver a compilar el código.</b>
+
 Si ponemos la función setColor(red, green, blue) el LED se apagará ya que los pines no estarán definidos.
 
 
 <b>¿Qué función tendría que dejar de utilizar para evitar el cambio aleatorio de los colores dentro del ciclo infinito? Explique que hace dicha función.</b>
+
 Para que no haya un cambio aleatorio de colores dentro del ciclo, habría que eliminar la función random(), la cual genera valores diferentes en cada ejecución del loop.
 
 <b>Utiliza al menos dos combinaciones de colores (RGB) no aleatorias, que más le guste y donde se observen diferencias y argumente porque cree usted que se observa la tendencia hacia un color determinado. </b>
+
 Los LEDs tienen una tendencia hacia el azul, esto es debido a que los diodos de distintos colores suelen tener una eficiencia distinta, y a que el ojo humano es más sensible a este color.
 
 <b>¿Qué sucedería si utilizamos la función aleatoria, pero regulamos los valores de la función random y pasamos los rangos que queremos? ¿Sería una forma de regular la coloración del LED RGB? Explique su respuesta brevemente.</b>
+
 Limitar los valores RGB dentro de la función random() nos serviría para regular qué colores queremos que muestre el LED.
 
 
 <b>Que observa tras cargar y correr el código del programa con respecto a lo que vimos antes. Explique la diferencia y argumente que es el gradiente y que es lo que hace (En el código) que en este ejercicio se pueda observar.</b> 
 
 <b>Explique que es el tipo de dato long y su diferencia con el int y porque se utiliza en el ejercicio</b>
+
 La diferencia principal entre INT y LONG es la cantidad de números enteros que pueden almacenar.
 
 
