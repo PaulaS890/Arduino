@@ -373,6 +373,69 @@ Si quitamos una resistencia del circuito, este se sobrecalentará y la bombilla 
 
 </details>
 
+
+<details>
+<summary><h2>Actividad 5</h2></summary>
+
+<h3>Preguntas</h3>
+
+<b>Analizar y entender la diferencia entre un LED normal a un LED RGB. Para esto pueden crear una pequeña tabla de dos Columnas, donde la cabecera de cada columna serán los dos tipos de LED analizados en clase y que tendrá dos filas asociadas a los elementos comunes y las diferencias entre ellos.</b>
+
+Un LED normal emite una única luz, mientras que uno RGB puede emitir los tres colores luz primarios (rojo, verde y azul) y mezclarlos para crear luces de más colores.
+
+| LED NORMAL                                                  | LED RGB                                                                                                                    |
+|-------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
+| Emite un único color                                        | Infinidad de colores mezclando las intensidades del rojo, verde y azul                                                     |
+| Dos pines ánodo y cátodo                                    | Cuatro pines, uno común (ánodo y cátodo) y los otros tres para los colores                                                 |
+| Se enciende o apaga desde un pin digital y una resistencia. | Se controla con pines PWM (pulse width modulation), que simulan voltajes variables ara ajustar la intensidad de cada color |
+
+<b>Que ocurriría en caso de invertir los colores del LED RGB por ejemplo que el pin 4 (Rojo) vaya a la pata del LED G(Verde) y el pin 0 a la pata del LED R(Roja). Porque cree que pase esto argumente su respuesta.</b>
+
+El color final deseado cambiaría ya que se modificaría la intensidad con la que brilla cada color.
+
+
+<b>Que sucede si comentamos dentro de la función void loop{}, la llamada a la función setColor(red, green, blue). Argumente lo que observa, después de volver a compilar el código.</b>
+Si ponemos la función setColor(red, green, blue) el LED se apagará ya que los pines no estarán definidos.
+
+
+<b>¿Qué función tendría que dejar de utilizar para evitar el cambio aleatorio de los colores dentro del ciclo infinito? Explique que hace dicha función.</b>
+Para que no haya un cambio aleatorio de colores dentro del ciclo, habría que eliminar la función random(), la cual genera valores diferentes en cada ejecución del loop.
+
+<b>Utiliza al menos dos combinaciones de colores (RGB) no aleatorias, que más le guste y donde se observen diferencias y argumente porque cree usted que se observa la tendencia hacia un color determinado. </b>
+Los LEDs tienen una tendencia hacia el azul, esto es debido a que los diodos de distintos colores suelen tener una eficiencia distinta, y a que el ojo humano es más sensible a este color.
+
+<b>¿Qué sucedería si utilizamos la función aleatoria, pero regulamos los valores de la función random y pasamos los rangos que queremos? ¿Sería una forma de regular la coloración del LED RGB? Explique su respuesta brevemente.</b>
+Limitar los valores RGB dentro de la función random() nos serviría para regular qué colores queremos que muestre el LED.
+
+
+<b>Que observa tras cargar y correr el código del programa con respecto a lo que vimos antes. Explique la diferencia y argumente que es el gradiente y que es lo que hace (En el código) que en este ejercicio se pueda observar.</b> 
+
+<b>Explique que es el tipo de dato long y su diferencia con el int y porque se utiliza en el ejercicio</b>
+La diferencia principal entre INT y LONG es la cantidad de números enteros que pueden almacenar.
+
+
+
+| INT                                      | LONG                                          |
+|------------------------------------------|-----------------------------------------------|
+| 32 bits                                  | Hasta 64 bits                                 |
+| Utilizado para números estándar          | Utilizado en cálculos científicos o contables |
+| Rango de -2.147.483.648 a -2.147.483.647 | Rango hasta 9 x 10^18                         |
+
+
+<b>Explique el funcionamiento de la función wheel de manera general.</b>
+
+<b>Busque en las referencias para que se utiliza la función ledcWrite() además indique cual es la salida de esta función y qué significado tiene en el código.</b>
+
+<h3>Foto y vídeo</h3>
+
+<img width="599" height="361" alt="image" src="https://github.com/user-attachments/assets/212a6290-5777-45cf-8a8c-c431514502bd" />
+
+https://github.com/user-attachments/assets/76f5c103-d68f-4810-a0b6-65fbe2417a49
+
+
+</details>
+
+
 <details>
 <summary><h2>Conclusiones</h2></summary>
 .
