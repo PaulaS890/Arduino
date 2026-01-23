@@ -570,6 +570,8 @@ https://github.com/user-attachments/assets/5d2516e6-e31e-45de-b8f1-3da31aada5db
 
 <b>Crear el diseño del circuito en cualquier herramienta de las que hemos trabajado en clase.</b>
 
+<img width="726" height="559" alt="image" src="https://github.com/user-attachments/assets/f8de9a4c-e342-4905-96c3-b064c44846aa" />
+
 
 <b>Si has probado el código verás que algo no funciona, localiza los errores, solvéntalos y
 explícanos por qué no funcionaba.</b>
