@@ -509,7 +509,7 @@ https://github.com/user-attachments/assets/41bdf0b5-4507-4c52-aa48-990a226ebce1
 </details>
 
 <details>
-<summary><h3>Actividad 6</h3></summary>
+<summary><h2>Actividad 6</h2></summary>
 
 ### Resumen de la actividad
 
@@ -561,7 +561,11 @@ void loop() {
 
 <img width="702" height="425" alt="image" src="https://github.com/user-attachments/assets/89035ccb-8c52-4d40-8ae4-1397f7608557" />
 
-![WhatsApp Image 2024-10-14 at 08 09 42](https://github.com/user-attachments/assets/9a48d873-a77f-4321-80dc-96ae15c8482b)
+
+
+https://github.com/user-attachments/assets/5d2516e6-e31e-45de-b8f1-3da31aada5db
+
+
 
 
 <b>Crear el diseño del circuito en cualquier herramienta de las que hemos trabajado en clase.</b>
