@@ -521,6 +521,48 @@ Para este ejercicio deberemos utilizar una barra LED para simular el efecto del 
 resistencia de 220 ohm y del otro extremo a masa, los pines donde conectar a placa los
 escogeis vosotros</b>
 
+CÓDIGO:
+```
+byte ledPins[] = {23, 22, 21, 19, 18, 5, 4, 0, 2, 5};
+int cuentaLED;
+
+void setup() {
+  cuentaLED = sizeof(ledPins) / sizeof(ledPins[0]);
+
+  for (int i = 0; i < cuentaLED; i++) {
+    pinMode(ledPins[i], OUTPUT);
+  }
+}
+
+void loop() {
+  for (int i = 0; i < cuentaLED; i++) {
+    digitalWrite(ledPins[i], LOW);
+    delay(50);
+    if (i > 0) {
+      digitalWrite(ledPins[i-1], HIGH);
+    }
+  }
+
+  digitalWrite(ledPins[cuentaLED-1], HIGH);
+
+  for (int i = cuentaLED - 2; i >= 0; i--) {
+    digitalWrite(ledPins[i], HIGH);
+    delay(50);
+    if (i < cuentaLED - 2) {
+      digitalWrite(ledPins[i+1], HIGH);
+    } 
+  }
+  digitalWrite(ledPins[0], HIGH);
+}
+
+```
+
+#### Foto y vídeo
+
+<img width="702" height="425" alt="image" src="https://github.com/user-attachments/assets/89035ccb-8c52-4d40-8ae4-1397f7608557" />
+
+![WhatsApp Image 2024-10-14 at 08 09 42](https://github.com/user-attachments/assets/9a48d873-a77f-4321-80dc-96ae15c8482b)
+
 
 <b>Crear el diseño del circuito en cualquier herramienta de las que hemos trabajado en clase.</b>
 
@@ -530,7 +572,7 @@ explícanos por qué no funcionaba.</b>
 
 ERROR 1: Los pines no están definidos, por lo que no se encenderá ningún led.
 
-ERROR 2: Por ende, si el array anterior está vacío, ledCounts = sizeof(ledPins); devolverá 0 porque no hay ningún parámetro. Además, sizeof() cuenta el número de bytes del array, no los elementos.
+ERROR 2: Por ende, si el array anterior está vacío, ledCounts = sizeof(ledPins); devolverá 0 porque no hay ningún parámetro.
 
 ERROR 3: Los bucles i+ e i- están mal escritos, deben escribirse como i++ e i--
 
@@ -543,18 +585,107 @@ ERROR 5: Los leds deben de estar escritos como OUTPUT, no INPUT.
 medio y vaya de izquierda a derecha. (Sube video también de esta parte y el código
 modificado)</b>
 
-Podemos hacerlo de forma sencilla cambiando los números de los pines dentro del array para que comience desde la posición que nosotros queramos.
+Podemos hacerlo de forma sencilla añadiendo la línea de código
+```
+  int center = cuentaLED / 2;
+```
+
+Esto divide el número de pines por la mitad (nos da el valor central) y hace que comience por ahí.
+También tenemos que modificar algunas variables de los bucles for del final.
+
+#### CÓDIGO MODIFICADO
+
+```
+byte ledPins[] = {23, 22, 21, 19, 18, 5, 4, 0, 2, 5};
+int cuentaLED;
+
+void setup() {
+  cuentaLED = sizeof(ledPins) / sizeof(ledPins[0]);
+
+  for (int i = 0; i < cuentaLED; i++) {
+    pinMode(ledPins[i], OUTPUT);
+  }
+}
+
+void loop() {
+
+  int center = cuentaLED / 2;
+
+  for (int i = 0; i < cuentaLED; i++) {
+    digitalWrite(ledPins[i], LOW);
+    delay(50);
+    if (i > center) {
+      digitalWrite(ledPins[i-1], HIGH);
+    }
+  }
+
+  digitalWrite(ledPins[cuentaLED-1], HIGH);
+
+  for (int i = center - 1; i >= 0; i--) {
+    digitalWrite(ledPins[i], HIGH);
+    delay(50);
+    if (i < center - 1) {
+      digitalWrite(ledPins[i+1], HIGH);
+    } 
+  }
+  digitalWrite(ledPins[0], HIGH);
+}
+
+```
+#### Vídeo
 
 
-<b>Basándonos en la segunda práctica donde controlamos un botón con un LED, queremos que
-añadáis un botón y cada vez que lo pulséis se encienda el siguiente LED, y que cuando
-llegue al final rebote en bucle.
-a. Video en funcionamiento.
+
+https://github.com/user-attachments/assets/b43d7fbc-3dd6-4020-89ec-89f59072c3dc
+
+
+
+<b>Ahora queremos que cuando la luz llegue al final rebote en bucle.
+a. Vídeo en funcionamiento.
+
+
+
+https://github.com/user-attachments/assets/86e73138-80ab-4135-babe-05679eae7874
+
+
 b. Código</b>
+```
+byte ledPins[] = {23, 22, 21, 19, 18, 5, 4, 0, 2, 5};
+int cuentaLED;
+int posicion = 0;
+int direccion = 1; // 1 = derecha, -1 = izquierda
+int velocidad = 100;
 
+void setup() {
+  cuentaLED = sizeof(ledPins) / sizeof(ledPins[0]);
 
-<b>Si has probado el código verás que algo no funciona, localiza los errores, solvéntalos y
-explícanos por qué no funcionaba.</b>
+  for (int i = 0; i < cuentaLED; i++) {
+    pinMode(ledPins[i], OUTPUT);
+  }
+}
+
+void loop() {
+
+// se apagan todos los leds
+for (int i = 0; i < cuentaLED; i++) {
+  digitalWrite(ledPins[i], HIGH);
+}
+
+//encender led en posicion actual
+  digitalWrite(ledPins[posicion], LOW);
+  delay(velocidad);
+
+  //mover la posición
+  posicion += direccion;
+
+  //cambia de dirección cuando llega al final
+  if (posicion >= cuentaLED - 1) {
+    direccion = -1; //izquierda
+  } else if (posicion <= 0) {
+    direccion = 1; //derecha
+  }
+}
+```
 
 </details>
 
