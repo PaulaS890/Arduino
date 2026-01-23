@@ -508,6 +508,55 @@ https://github.com/user-attachments/assets/41bdf0b5-4507-4c52-aa48-990a226ebce1
 
 </details>
 
+<details>
+<summary><h3>Actividad 6</h3></summary>
+
+### Resumen de la actividad
+
+Para este ejercicio deberemos utilizar una barra LED para simular el efecto del coche fantástico, haciendo que las luces se vayan iluminando de izquierda a derecha y reboten en los bordes, formando un ciclo infinito.
+
+### Preguntas
+
+<b>1. Diseñar el circuito partiendo de la base que a cada pin de la barra LED irá conectado una
+resistencia de 220 ohm y del otro extremo a masa, los pines donde conectar a placa los
+escogeis vosotros</b>
+
+
+<b>Crear el diseño del circuito en cualquier herramienta de las que hemos trabajado en clase.</b>
+
+
+<b>Si has probado el código verás que algo no funciona, localiza los errores, solvéntalos y
+explícanos por qué no funcionaba.</b>
+
+ERROR 1: Los pines no están definidos, por lo que no se encenderá ningún led.
+
+ERROR 2: Por ende, si el array anterior está vacío, ledCounts = sizeof(ledPins); devolverá 0 porque no hay ningún parámetro. Además, sizeof() cuenta el número de bytes del array, no los elementos.
+
+ERROR 3: Los bucles i+ e i- están mal escritos, deben escribirse como i++ e i--
+
+ERROR 4: Dentro de delay() debe de haber algún valor, no puede quedarse vacío, sino, no hace nada.
+
+ERROR 5: Los leds deben de estar escritos como OUTPUT, no INPUT.
+
+
+<b>Cómo tengo que hacer si quiero que el LED empiece en otra posición, por ejemplo, en el
+medio y vaya de izquierda a derecha. (Sube video también de esta parte y el código
+modificado)</b>
+
+Podemos hacerlo de forma sencilla cambiando los números de los pines dentro del array para que comience desde la posición que nosotros queramos.
+
+
+<b>Basándonos en la segunda práctica donde controlamos un botón con un LED, queremos que
+añadáis un botón y cada vez que lo pulséis se encienda el siguiente LED, y que cuando
+llegue al final rebote en bucle.
+a. Video en funcionamiento.
+b. Código</b>
+
+
+<b>Si has probado el código verás que algo no funciona, localiza los errores, solvéntalos y
+explícanos por qué no funcionaba.</b>
+
+</details>
 
 <details>
 <summary><h2>Conclusiones</h2></summary>
