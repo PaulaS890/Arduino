@@ -696,6 +696,28 @@ for (int i = 0; i < cuentaLED; i++) {
 </details>
 
 <details>
+<summary><h2>Actividad 7</h2></summary>
+	
+### Resumen de la actividad
+
+Para este ejercicio deberemos conectar una placa LED y un higrotermógrafo a la placa Arduino y con ello hacer que en la pantalla muestre datos de temperatura y humedad gracias al higrotermógrafo.
+
+### Preguntas
+<b>1. Conecta la pantalla tal y como se muestra en el circuito anterior.</b>
+
+Conectado.
+
+<b>2. En el Arduino IDE incluye la librería que puedes encontrar en Github, busca el paquete de
+LiquidCrystal_I2C.zip y añádelo al IDE para que funcione.</b>
+<b>3. Pon el “Upload speed” de “Herramientas>Upload speed” a 115200.</b>
+<b>4. NO utilices el puerto 12 de la GPIO.</b>
+<b>5. Usa el código que encuentres en el capítulo.</b>
+#### Foto y vídeo
+#### CÓDIGO MODIFICADO
+#### Vídeo
+</details>
+
+<details>
 <summary><h2>Conclusiones</h2></summary>
 .
 </details>
