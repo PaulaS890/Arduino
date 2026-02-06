@@ -718,6 +718,55 @@ LiquidCrystal_I2C.zip y añádelo al IDE para que funcione.</b>
 </details>
 
 <details>
+<summary>Actividad 8</summary>
+
+### Resumen de la actividad
+
+### Preguntas
+
+### Código
+
+#### Primera parte
+
+```
+#include <WiFi.h>
+#include <WiFiClient.h>
+#include <WiFiClientSecure.h>
+const char* ssid = "IFP";   // escribir aquí el SSID de una WiFi
+const char* password = "ifpformacion"; // escribir aquí la contraseña de la WiFi 
+
+void setup(){ 
+  Serial.begin(115200); // abre un puerto serie y establece la velocidad de transmisión
+  delay(2000); 
+  Serial.println("Setup start"); 
+  WiFi.begin(ssid, password); 
+  Serial.println(String("Connecting to ")+ssid);
+
+while (WiFi.status() != WL_CONNECTED) { 
+  delay(500);
+  Serial.print(".");
+}
+Serial.println("\nConnected, IP address: ");
+Serial.println(WiFi.localIP());
+Serial.println("Setup end");
+}
+void loop() { 
+}
+
+```
+
+#### Segunda Parte
+
+```
+
+```
+
+### Fotos
+
+</details>
+
+
+<details>
 <summary><h2>Conclusiones</h2></summary>
 .
 </details>
