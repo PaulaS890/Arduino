@@ -950,7 +950,32 @@ void loop() {
 
 #### Segunda Parte
 ```
-
+#include <WiFi.h>
+const char *ssid_AP = "yipihotspot"; 
+const char *password_AP = "aleksei"; //Enter the router password
+IPAddress local_IP(192,168,1,100);
+IPAddress gateway(192,168,1,10); 
+IPAddress subnet(255,255,255,0); 
+void setup(){
+Serial.begin(9600);
+delay(2000);
+Serial.println("Setting soft-AP configuration ... ");
+WiFi.disconnect();
+WiFi.mode(WIFI_AP);
+Serial.println(WiFi.softAPConfig(local_IP, gateway, subnet) ? "Ready" : "Failed!");
+Serial.println("Setting soft-AP ... ");
+boolean result = WiFi.softAP(ssid_AP, password_AP);
+if(result){
+Serial.println("Ready");
+Serial.println(String("Soft-AP IP address = ") + WiFi.softAPIP().toString());
+Serial.println(String("MAC address = ") + WiFi.softAPmacAddress().c_str());
+}else{
+Serial.println("Failed!");
+}
+Serial.println("Setup End");
+}
+void loop() {
+}
 ```
 #### Preguntas
 
@@ -967,9 +992,6 @@ El método que te permite visualizar la dirección IP es con el comando WiFi.sof
 <b>4. ¿Qué nos permite la opción c_str() en el código?</b>
 Esta opción convierte un objeto String en un array de caracteres estilo C. Es esencial cuando una función requiere un char* o const char* en lugar de un objeto String.
 
-
-
-### Fotos
 
 </details>
 
