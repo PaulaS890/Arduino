@@ -756,12 +756,16 @@ void loop() {
 #### Preguntas
 
 <b>1. Primero prueba que el código funciona por monitor serial. Prueba a soplar sobre el sensor para modificar los valores de humedad.</b>
+Cuando se sopla, aumenta la humedad, se puede ver un claro ejemplo en el vídeo adjuntado más abajo.
 
 <b>2. Ahora prueba a mostrar los valores en la pantalla LCD</b>
 
+
 <b>3. Busca que hace esta linea “DHTesp dht; “ al principio del código. ¿Que es un objeto en programación y que es lo que hace?</b>
+Interactua con un sensor de humedad y temperatura DHT, utilizando la librería "DHT sensor library for ESPx".
 
 <b>4. Prueba a codificar los valores para que muestre en la primera fila la temperatura en grados Kelvin y en la segunda fila en grados Farenheit.</b>
+
 
 
 #### Código
