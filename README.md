@@ -759,13 +759,79 @@ void loop() {
 Cuando se sopla, aumenta la humedad, se puede ver un claro ejemplo en el vídeo adjuntado más abajo.
 
 <b>2. Ahora prueba a mostrar los valores en la pantalla LCD</b>
-
+En el vídeo mostramos el cambio que hay cuando soplamos en el sensor.
 
 <b>3. Busca que hace esta linea “DHTesp dht; “ al principio del código. ¿Que es un objeto en programación y que es lo que hace?</b>
 Interactua con un sensor de humedad y temperatura DHT, utilizando la librería "DHT sensor library for ESPx".
 
 <b>4. Prueba a codificar los valores para que muestre en la primera fila la temperatura en grados Kelvin y en la segunda fila en grados Farenheit.</b>
 
+<img width="1350" height="698" alt="image" src="https://github.com/user-attachments/assets/a44dcdd2-f9bd-4e5e-9a14-f62d6c69b7f4" />
+
+```
+#include <Wire.h> 
+#include <LiquidCrystal_I2C.h>
+#include <DHTesp.h>
+
+#define SDA 13
+#define SCL 14
+
+DHTesp dht;
+LiquidCrystal_I2C lcd(0x27,16,2);
+int dhtPin = 18;
+
+float celsiusToKelvin(float celsius) {
+  return celsius + 273.15;
+}
+
+
+float celsiusToFahrenheit(float celsius) {
+  return (celsius * 9.0/5.0) + 32.0;
+}
+
+bool i2CAddrTest(uint8_t addr) {
+  Wire.begin();
+  Wire.beginTransmission(addr);
+  if (Wire.endTransmission() == 0) {
+    return true;
+  }
+  return false;
+}
+
+void setup() {
+  Wire.begin(SDA, SCL);
+  if (!i2CAddrTest(0x27)) {
+    lcd = LiquidCrystal_I2C(0x3F, 16, 2);
+  }
+  lcd.init();
+  lcd.backlight();
+  dht.setup(dhtPin, DHTesp::DHT11);
+}
+
+void loop() {
+  flag: TempAndHumidity DHT = dht.getTempAndHumidity();
+  if (dht.getStatus() != 0) {
+    goto flag;
+  }
+  
+
+  float tempKelvin = celsiusToKelvin(DHT.temperature);
+  float tempFahrenheit = celsiusToFahrenheit(DHT.temperature);
+  
+
+  lcd.setCursor(0, 0);
+  lcd.print("Temp Kelvin: "); 
+  lcd.print(tempKelvin, 2);
+  lcd.print(" K  ");
+  
+  lcd.setCursor(0, 1);
+  lcd.print("Humidity F: "); 
+  lcd.print(tempFahrenheit, 2); 
+  lcd.print(" F  ");
+  
+  delay(2000);
+}
+```
 
 
 #### Código
