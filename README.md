@@ -896,8 +896,26 @@ https://github.com/user-attachments/assets/8283de5e-4091-4e82-bd3f-b2a0f4f381e7
 <summary><h2>Actividad 8</h2></summary>
 
 ### Resumen de la actividad
+Para esta actividad usaremos la placa de arduino para conectarnos a la red WiFi de iFP y crearemos un punto de acceso al que nos podremos conectar.
 
 ### Preguntas
+
+<b>1. ¿A qué red te has podido conectar? Es 5G, 2.4G? Explica.</b>
+Me he conectado a la red IFP, que es 5g.
+
+<b>2. Verifica el uso de las librerías que aparecen en el código. ¿Son necesarias las tres? </b>
+wifi.h - gestiona la conexion de wifi.
+wificlient.h - se encarga de la comunicacion tcp ip basica.
+wificlientsecure.h - comunicacion segura con tls ssl.
+
+<b>3. ¿En qué casos utilizaría las librerías de arduino WiFiClient.h y WiFiClientSecure.h? </b>
+Las utilizaría cuando quiera compartir datos de forma segura entre dispositivos.
+
+<b>Prueba la conectividad entre un dispositivo como e PC o el móvil a la IP que te brinda el ESP32.</b>
+<img width="291" height="176" alt="image" src="https://github.com/user-attachments/assets/d68a6568-e3e4-4d36-8ce7-5e8488ff325e" />
+<img width="610" height="274" alt="image" src="https://github.com/user-attachments/assets/916396bd-7d17-4369-ab15-f15054a9bd04" />
+
+
 
 ### Código
 
@@ -911,7 +929,7 @@ const char* ssid = "IFP";   // escribir aquí el SSID de una WiFi
 const char* password = "ifpformacion"; // escribir aquí la contraseña de la WiFi 
 
 void setup(){ 
-  Serial.begin(115200); // abre un puerto serie y establece la velocidad de transmisión
+  Serial.begin(9600); // abre un puerto serie y establece la velocidad de transmisión
   delay(2000); 
   Serial.println("Setup start"); 
   WiFi.begin(ssid, password); 
@@ -931,10 +949,25 @@ void loop() {
 ```
 
 #### Segunda Parte
-
 ```
 
 ```
+#### Preguntas
+
+<b>1. ¿Cuál es el uso de softAPConfig? Argumenta</b>
+SoftAPConfig te permite configurar la red Wi-Fi en modo Punto de Acceso (o Access Point).
+
+<b>2. ¿Cómo puedo conocer la cantidad de dispositivos conectados a mi AP? Para ello investiga el uso de WiFi.softAPgetStationNum() y añade las líneas necesarias al código.</b>
+Se vería usando el comando WiFi.softAPgetStationNum().
+
+<b>3. ¿Qué método me permite visualizar la dirección IP de la interfaz de red del punto de acceso?</b>
+El método que te permite visualizar la dirección IP es con el comando WiFi.softAPIP().
+
+
+<b>4. ¿Qué nos permite la opción c_str() en el código?</b>
+Esta opción convierte un objeto String en un array de caracteres estilo C. Es esencial cuando una función requiere un char* o const char* en lugar de un objeto String.
+
+
 
 ### Fotos
 
