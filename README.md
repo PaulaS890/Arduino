@@ -700,7 +700,7 @@ for (int i = 0; i < cuentaLED; i++) {
 	
 ### Resumen de la actividad
 
-Para este ejercicio deberemos conectar una placa LED y un higrotermógrafo a la placa Arduino y con ello hacer que en la pantalla muestre datos de temperatura y humedad gracias al higrotermógrafo.
+Para este ejercicio deberemos conectar una placa LED y un higrotermógrafo a la placa Arduino y con ello hacer que se muestren datos de temperatura y humedad del ambiente en la pantalla.
 
 ### Preguntas
 <b>1. Conecta la pantalla tal y como se muestra en el circuito anterior.</b>
@@ -713,12 +713,117 @@ LiquidCrystal_I2C.zip y añádelo al IDE para que funcione.</b>
 <b>4. NO utilices el puerto 12 de la GPIO.</b>
 <b>5. Usa el código que encuentres en el capítulo.</b>
 #### Foto y vídeo
+
+<img width="1261" height="685" alt="image" src="https://github.com/user-attachments/assets/6ee2c91d-da06-4b59-ab58-13c08c7a9f42" />
+
+
+https://github.com/user-attachments/assets/f13eaf30-74e4-460b-aea2-2e74cd6a32d1
+
+
+
 #### CÓDIGO MODIFICADO
-#### Vídeo
+```
+#include <Wire.h> 
+#include <LiquidCrystal_I2C.h>
+
+//Crear el objeto lcd  dirección  0x3F y 16 columnas x 2 filas
+LiquidCrystal_I2C lcd(0x3F,16,2);  //
+
+void setup() {
+  // Inicializar el LCD
+  lcd.init();
+  
+  Serial.begin(9600);
+  lcd.backlight();
+
+  // Escribimos el Mensaje en el LCD.
+  lcd.print("Hola!!! :3");
+}
+
+void loop() {
+   // Ubicamos el cursor en la primera posición(columna:0) de la segunda línea(fila:1)
+  lcd.setCursor(0, 1);
+   // Escribimos el número de segundos trascurridos
+  lcd.print(millis()/1000);
+  lcd.print(" Segundos");
+  delay(100);
+}
+
+```
+
+### Segunda parte
+
+#### Preguntas
+
+<b>1. Primero prueba que el código funciona por monitor serial. Prueba a soplar sobre el sensor para modificar los valores de humedad.</b>
+
+<b>2. Ahora prueba a mostrar los valores en la pantalla LCD</b>
+
+<b>3. Busca que hace esta linea “DHTesp dht; “ al principio del código. ¿Que es un objeto en programación y que es lo que hace?</b>
+
+<b>4. Prueba a codificar los valores para que muestre en la primera fila la temperatura en grados Kelvin y en la segunda fila en grados Farenheit.</b>
+
+
+#### Código
+```
+#include <Wire.h> 
+#include <LiquidCrystal_I2C.h>
+#include <DHTesp.h>
+
+#define SDA 13
+#define SCL 14
+
+DHTesp dht;
+LiquidCrystal_I2C lcd(0x27,16,2);
+int dhtPin = 18;
+
+void setup() {
+  Wire.begin(SDA, SCL);
+  if (!i2CAddrTest(0x27)) {
+    lcd = LiquidCrystal_I2C(0x3F, 16, 2);
+  }
+  lcd.init();
+  lcd.backlight();
+  dht.setup(dhtPin, DHTesp::DHT11);
+}
+
+void loop() {
+
+flag:TempAndHumidity DHT = dht.getTempAndHumidity();
+if (dht.getStatus() != 0) {
+goto flag;
+}
+lcd.setCursor(0, 0);
+lcd.print("Temperature:"); 
+lcd.print(DHT.temperature);
+lcd.setCursor(0, 1);
+lcd.print("Humidity :"); 
+lcd.print(DHT.humidity);
+delay(2000);
+}
+bool i2CAddrTest(uint8_t addr) {
+Wire.begin();
+Wire.beginTransmission(addr);
+if (Wire.endTransmission() == 0) {
+return true;
+}
+return false;
+}
+```
+
+#### Foto y vídeo
+
+<img width="1289" height="655" alt="image" src="https://github.com/user-attachments/assets/17aa6b30-2af7-4fd0-9e33-ddfaaa44ce00" />
+
+
+https://github.com/user-attachments/assets/8283de5e-4091-4e82-bd3f-b2a0f4f381e7
+
+
+
 </details>
 
 <details>
-<summary>Actividad 8</summary>
+<summary><h2>Actividad 8</h2></summary>
 
 ### Resumen de la actividad
 
