@@ -1000,13 +1000,33 @@ Esta opción convierte un objeto String en un array de caracteres estilo C. Es e
 
 ### Briefing
 
-#### 1. Idea para el proyecto
+#### 1. Presentación de la idea
 Para nuestro proyecto de arduino, hemos decidido recrear una hucha que recoja automáticamente las monedas que se le coloquen encima. Será una caja cerrada que, al activarse el mecanismo, se abrirá y saldrá un brazo mecánico que recogerá la moneda y la meterá dentro. Además, incorporaremos un contador que mostrará la cantidad de dinero que haya dentro de la hucha.
-Para esta idea, hemos tomado inspiración de unas huchas que ya existen, normalmente tematizadas con personajes de series de televisión o videojuegos.
+Para esta idea, hemos tomado inspiración de unas huchas que ya existen, normalmente tematizadas con personajes de series de televisión o animales.
 
-<img width="1000" height="993" alt="image" src="https://github.com/user-attachments/assets/a3dbed59-6ed8-4c31-96e6-abb6b9d6ab92" />
+<img width="894" height="832" alt="image" src="https://github.com/user-attachments/assets/82de4bab-55ba-4a17-81a6-537da82cc154" />
 
-	
+#### 2. Objetivos del proyecto
+Con el desarrollo de este proyecto, aprenderemos a:
+<ul>
+<li>Crear un programa desde cero que detecte estímulos y ponga en marcha un mecanismo sencillo.</li>
+<li>Montar dicho mecanismo con piezas fabricadas por nosotros y/o improvisadas</li>
+</ul>	
+
+#### 3. Requisitos técnicos
+Para montarlo todo necesitaremos:
+<ul>
+<li>La placa de arduino con el extensor ESP32</li>
+<li>Cables</li>
+<li>Pantalla LCD</li>
+<li>Sensor</li>
+<li>Resistencias</li>
+<li>Caja</li>
+<li>Un bracito para recoger la moneda</li>
+<li>Piezas para que se mueva el brazo</li>
+<li>Un muñeco para decorar el interior</li>
+<li>Pintura y pegatinas para decorar el exterior</li>
+</ul>
 </details>
 <details>
 <summary><h2>Conclusiones</h2></summary>
