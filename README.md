@@ -1001,8 +1001,8 @@ Esta opción convierte un objeto String en un array de caracteres estilo C. Es e
 ### Briefing
 
 #### 1. Idea para el proyecto
-Para nuestro proyecto de arduino, hemos decidido recrear una hucha que recoja automáticamente las monedas que le coloquemos sobre un sensor. Será una caja cerrada que, al activarse el mecanismo, se abrirá y saldrá un brazo mecánico que recogerá la moneda y la meterá dentro. Además, incorporaremos un contador que mostrará la cantidad de dinero que haya dentro de la hucha.
-Para esta idea, nos hemos inspirado de unas huchas que ya existen, normalmente tematizadas con personajes de series de televisión o videojuegos.
+Para nuestro proyecto de arduino, hemos decidido recrear una hucha que recoja automáticamente las monedas que se le coloquen encima. Será una caja cerrada que, al activarse el mecanismo, se abrirá y saldrá un brazo mecánico que recogerá la moneda y la meterá dentro. Además, incorporaremos un contador que mostrará la cantidad de dinero que haya dentro de la hucha.
+Para esta idea, hemos tomado inspiración de unas huchas que ya existen, normalmente tematizadas con personajes de series de televisión o videojuegos.
 
 <img width="1000" height="993" alt="image" src="https://github.com/user-attachments/assets/a3dbed59-6ed8-4c31-96e6-abb6b9d6ab92" />
 
