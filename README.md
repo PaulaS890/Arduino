@@ -1047,13 +1047,13 @@ https://blogs.etsii.urjc.es/dseytr/hucha-inteligente-cuenta-monedas/
 De cara a este proyecto, tenemos diversos desafíos que deberemos afrontar, siendo estos:
 
 <ul>
-<li>Fabricación del brazo mecánico</li>
+<li><b>Fabricación del brazo mecánico</b></li>
 Construir la estructura adecuada para que al accionarse el mecanismo, el brazo haga el movimiento que nosotros queremos y recoja la moneda correctamente.
 
-<li>Contador de monedas</li>
+<li><b>Contador de monedas</b></li>
 Teníamos pensado utilizar un sensor de peso para poder clasificar el valor de las distintas monedas, sin embargo, no tenemos uno, por lo que deberemos buscar una alternativa para poder contarlas correctamente.
 
-<li>Programación</li>
+<li><b>Programación</b></li>
 Hasta ahora solo hemos utilizado código que nos brindaban los tutoriales oficiales de Arduino, por lo que tener que escribir nuestro propio código desde cero supondrá todo un reto. 
 </ul>
 
