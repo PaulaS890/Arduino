@@ -1027,6 +1027,36 @@ Para montarlo todo necesitaremos:
 <li>Un muñeco para decorar el interior</li>
 <li>Pintura y pegatinas para decorar el exterior</li>
 </ul>
+
+#### Metodología de trabajo
+En nuestro Trello tenemos listadas las tareas por hacer, los principales pasos siendo:
+<ul>
+<li>Acabar de concretar qué materiales utilizaremos para fabricar el brazo mecánico</li>
+<li>Trabajar en la electrónica de la hucha</li>
+<li>Escribir el código y comprobar que funciona correctamente</li>
+<li>Montarlo todo dentro de la caja y ensamblar el brazo mecánico</li>
+<li>Decorar la caja y comprobar que todo funciona correctamente</li>
+</ul>
+
+#### Recursos disponibles
+Tenemos diversos tutoriales para fabricar una hucha cuentamonedas, este es uno de nuestros favoritos por, además de mostrar como la han hecho, detallan con precisión todos los materiales que han utilizado.
+https://blogs.etsii.urjc.es/dseytr/hucha-inteligente-cuenta-monedas/
+
+
+#### Desafíos y soluciones previstas
+De cara a este proyecto, tenemos diversos desafíos que deberemos afrontar, siendo estos:
+
+<ul>
+<li>Fabricación del brazo mecánico</li>
+Construir la estructura adecuada para que al accionarse el mecanismo, el brazo haga el movimiento que nosotros queremos y recoja la moneda correctamente.
+
+<li>Contador de monedas</li>
+Teníamos pensado utilizar un sensor de peso para poder clasificar el valor de las distintas monedas, sin embargo, no tenemos uno, por lo que deberemos buscar una alternativa para poder contarlas correctamente.
+
+<li>Programación</li>
+Hasta ahora solo hemos utilizado código que nos brindaban los tutoriales oficiales de Arduino, por lo que tener que escribir nuestro propio código desde cero supondrá todo un reto. 
+</ul>
+
 </details>
 <details>
 <summary><h2>Conclusiones</h2></summary>
