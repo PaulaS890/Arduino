@@ -1001,8 +1001,9 @@ Esta opción convierte un objeto String en un array de caracteres estilo C. Es e
 ### Briefing
 
 #### 1. Presentación de la idea
-Para nuestro proyecto de arduino, hemos decidido recrear una hucha que recoja automáticamente las monedas que se le coloquen encima. Será una caja cerrada que, al activarse el mecanismo, se abrirá y saldrá un brazo mecánico que recogerá la moneda y la meterá dentro. Además, incorporaremos un contador que mostrará la cantidad de dinero que haya dentro de la hucha.
+Para nuestro proyecto de arduino, hemos decidido recrear una hucha que recoja automáticamente las monedas que se le coloquen encima. Será una caja cerrada que, al activarse el mecanismo, se abrirá y saldrá un brazo mecánico que recogerá la moneda y la meterá dentro. Además, incorporaremos un altavoz que se activará y emitirá un maullido cuando el botón sea accionado.
 Para esta idea, hemos tomado inspiración de unas huchas que ya existen, normalmente tematizadas con personajes de series de televisión o animales.
+Dentro de la caja meteremos un muñeco de un gato que será el que "roba" la moneda. En caso de que no consigamos ninguna figura o peluche, pintaremos el interior de la caja de negro y le dibujaremos unos ojos brillantes, simulando que hay un gato escondido dentro de la caja oscura.
 
 <img width="894" height="832" alt="image" src="https://github.com/user-attachments/assets/82de4bab-55ba-4a17-81a6-537da82cc154" />
 
@@ -1018,8 +1019,7 @@ Para montarlo todo necesitaremos:
 <ul>
 <li>La placa de arduino con el extensor ESP32</li>
 <li>Cables</li>
-<li>Pantalla LCD</li>
-<li>Sensor</li>
+<li>Altavoz</li>
 <li>Resistencias</li>
 <li>Caja</li>
 <li>Un bracito para recoger la moneda</li>
@@ -1033,7 +1033,7 @@ En nuestro Trello tenemos listadas las tareas por hacer, los principales pasos s
 <ul>
 <li>Acabar de concretar qué materiales utilizaremos para fabricar el brazo mecánico</li>
 <li>Trabajar en la electrónica de la hucha</li>
-<li>Escribir el código y comprobar que funciona correctamente</li>
+<li>Escribir el código y comprobar que funciona como debería</li>
 <li>Montarlo todo dentro de la caja y ensamblar el brazo mecánico</li>
 <li>Decorar la caja y comprobar que todo funciona correctamente</li>
 </ul>
@@ -1050,12 +1050,14 @@ De cara a este proyecto, tenemos diversos desafíos que deberemos afrontar, sien
 <li><b>Fabricación del brazo mecánico</b></li>
 Construir la estructura adecuada para que al accionarse el mecanismo, el brazo haga el movimiento que nosotros queremos y recoja la moneda correctamente.
 
-<li><b>Contador de monedas</b></li>
-Teníamos pensado utilizar un sensor de peso para poder clasificar el valor de las distintas monedas, sin embargo, no tenemos uno, por lo que deberemos buscar una alternativa para poder contarlas correctamente.
+<li><b>Altavoz</b></li>
+Utilizaremos un altavoz que se activará al presionar el botón, junto al brazo eléctrico, y emitirá un maullido.
 
 <li><b>Programación</b></li>
 Hasta ahora solo hemos utilizado código que nos brindaban los tutoriales oficiales de Arduino, por lo que tener que escribir nuestro propio código desde cero supondrá todo un reto. 
 </ul>
+
+### Esquema eléctrico
 
 </details>
 <details>
