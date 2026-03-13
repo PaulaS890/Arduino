@@ -1058,6 +1058,7 @@ Hasta ahora solo hemos utilizado código que nos brindaban los tutoriales oficia
 </ul>
 
 ### Esquema eléctrico
+A continuación podeis ver el esquema eléctrico de nuestro montaje en arduino. Los elementos en rojo representan el botón, el cual será la llamada para hacer la acción del brazo con el motor, que es el circulo con la letra M además de reproducir un sonido en la bocina (representado con un dibujo de una bocina)
 <img width="593" height="655" alt="image" src="https://github.com/user-attachments/assets/681c3186-e1b3-4096-8faa-655510307363" />
 
 </details>
