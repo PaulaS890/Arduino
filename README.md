@@ -1007,6 +1007,7 @@ Para esta idea, hemos tomado inspiración de varios vídeos que hemos visto por 
 
 <img width="400" height="308" alt="image" src="https://github.com/user-attachments/assets/5714d1a9-9b87-47fb-8360-c6427ef77a6e" />
 
+
 Aqui tenéis un vídeo donde sale mejor nuestra idea:
 https://github.com/user-attachments/assets/1f06af0a-6732-44e5-9e78-e882ead8569d
 
@@ -1023,23 +1024,23 @@ Con el desarrollo de este proyecto, aprenderemos a:
 Para montarlo todo necesitaremos:
 <ul>
 <li>La placa de arduino con el extensor ESP32</li>
+<li>Interruptor</li>
 <li>Cables</li>
 <li>Altavoz</li>
 <li>Resistencias</li>
 <li>Caja</li>
-<li>Un bracito para recoger la moneda</li>
-<li>Piezas para que se mueva el brazo</li>
-<li>Un muñeco para decorar el interior</li>
+<li>Un dedo de plástico para apagar el interruptor</li>
+<li>Piezas para que se mueva el dedo</li>
 <li>Pintura y pegatinas para decorar el exterior</li>
 </ul>
 
 #### Metodología de trabajo
 En nuestro Trello tenemos listadas las tareas por hacer, los principales pasos siendo:
 <ul>
-<li>Acabar de concretar qué materiales utilizaremos para fabricar el brazo mecánico</li>
-<li>Trabajar en la electrónica de la hucha</li>
+<li>Acabar de concretar qué materiales utilizaremos para fabricar el dedo robótico</li>
+<li>Trabajar en la electrónica y el comportamiento del interruptor y el dedo robótico</li>
 <li>Escribir el código y comprobar que funciona como debería</li>
-<li>Montarlo todo dentro de la caja y ensamblar el brazo mecánico</li>
+<li>Montarlo todo dentro de la caja y ensamblar el dedo</li>
 <li>Decorar la caja y comprobar que todo funciona correctamente</li>
 </ul>
 
@@ -1052,18 +1053,18 @@ https://blogs.etsii.urjc.es/dseytr/hucha-inteligente-cuenta-monedas/
 De cara a este proyecto, tenemos diversos desafíos que deberemos afrontar, siendo estos:
 
 <ul>
-<li><b>Fabricación del brazo mecánico</b></li>
-Construir la estructura adecuada para que al accionarse el mecanismo, el brazo haga el movimiento que nosotros queremos y recoja la moneda correctamente.
+<li><b>Fabricación del dedo mecánico</b></li>
+Construir la estructura adecuada para que al accionarse el mecanismo, el dedo haga el movimiento que nosotros queremos y apague el interruptor correctamente.
 
 <li><b>Altavoz</b></li>
-Utilizaremos un altavoz que se activará al presionar el botón, junto al brazo eléctrico, y emitirá un maullido.
+Utilizaremos un altavoz que se activará al presionar el interruptor, junto al dedo eléctrico, y emitirá un sonido.
 
 <li><b>Programación</b></li>
 Hasta ahora solo hemos utilizado código que nos brindaban los tutoriales oficiales de Arduino, por lo que tener que escribir nuestro propio código desde cero supondrá todo un reto. 
 </ul>
 
 ### Esquema eléctrico
-A continuación podeis ver el esquema eléctrico de nuestro montaje en arduino. Los elementos en rojo representan el botón, el cual será la llamada para hacer la acción del brazo con el motor, que es el circulo con la letra M además de reproducir un sonido en la bocina (representado con un dibujo de una bocina).
+A continuación podeis ver el esquema eléctrico de nuestro montaje en arduino. Los elementos en rojo representan el interruptor, el cual será la llamada para hacer la acción del dedo con el motor, que es el circulo con la letra M además de reproducir un sonido en la bocina (representado con un dibujo de una bocina).
 
 <img width="593" height="655" alt="image" src="https://github.com/user-attachments/assets/681c3186-e1b3-4096-8faa-655510307363" />
 
