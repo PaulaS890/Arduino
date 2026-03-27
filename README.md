@@ -1001,11 +1001,14 @@ Esta opción convierte un objeto String en un array de caracteres estilo C. Es e
 ### Briefing
 
 #### 1. Presentación de la idea
-Para nuestro proyecto de arduino, hemos decidido recrear una hucha que recoja automáticamente las monedas que se le coloquen encima. Será una caja cerrada que, al activarse el mecanismo, se abrirá y saldrá un brazo mecánico que recogerá la moneda y la meterá dentro. Además, incorporaremos un altavoz que se activará y emitirá un maullido cuando el botón sea accionado.
-Para esta idea, hemos tomado inspiración de unas huchas que ya existen, normalmente tematizadas con personajes de series de televisión o animales.
-Dentro de la caja meteremos un muñeco de un gato que será el que "roba" la moneda. En caso de que no consigamos ninguna figura o peluche, pintaremos el interior de la caja de negro y le dibujaremos unos ojos brillantes, simulando que hay un gato escondido dentro de la caja oscura.
+Para nuestro proyecto de arduino, hemos decidido crear una caja donde haya un interruptor en la parte exterior y que al presionar dicho interruptor salga un dedo robótico que lo apague. Una vez apagado el dedo se vuelve a esconder dentro de la caja. Para esta idea, hemos tomado inspiración de varios vídeos que hemos visto por internet, además de un anuncio publicitario de FactorEnergia TV3 donde sale una máquina muy similar a lo que queremos hacer.
 
 <img width="894" height="832" alt="image" src="https://github.com/user-attachments/assets/82de4bab-55ba-4a17-81a6-537da82cc154" />
+
+Aqui tenéis un vídeo donde sale mejor nuestra idea:
+https://github.com/user-attachments/assets/1f06af0a-6732-44e5-9e78-e882ead8569d
+
+Cabe recalcar que, a pesar de que en el vídeo se muestre como el dedo robótico se comporta de manera diferente por cada vez que se presiona el interruptor. En principio nosostros solo queremos hacer que el dedo tenga un solo comportamiento monótono, pero en caso de que tengamos tiempo entonces veremos de que el dedo tenga más de un comportamiento.
 
 #### 2. Objetivos del proyecto
 Con el desarrollo de este proyecto, aprenderemos a:
