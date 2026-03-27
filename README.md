@@ -1001,7 +1001,9 @@ Esta opción convierte un objeto String en un array de caracteres estilo C. Es e
 ### Briefing
 
 #### 1. Presentación de la idea
-Para nuestro proyecto de arduino, hemos decidido crear una caja donde haya un interruptor en la parte exterior y que al presionar dicho interruptor salga un dedo robótico que lo apague. Una vez apagado el dedo se vuelve a esconder dentro de la caja. Para esta idea, hemos tomado inspiración de varios vídeos que hemos visto por internet, además de un anuncio publicitario de FactorEnergia TV3 donde sale una máquina muy similar a lo que queremos hacer.
+Para nuestro proyecto de arduino, hemos decidido crear una caja donde haya un interruptor en la parte exterior y que al presionar dicho interruptor salga un dedo robótico que lo apague. Una vez apagado el dedo se vuelve a esconder dentro de la caja, con la adición extra de que emitirá un sonido con el altavoz incorporado cada vez que se encienda el interruptor.
+
+Para esta idea, hemos tomado inspiración de varios vídeos que hemos visto por internet, además de un anuncio publicitario de FactorEnergia TV3 donde sale una máquina muy similar a lo que queremos hacer.
 
 <img width="400" height="308" alt="image" src="https://github.com/user-attachments/assets/5714d1a9-9b87-47fb-8360-c6427ef77a6e" />
 
