@@ -1092,78 +1092,83 @@ Finalmente, el proyecto final nos ha permitido aplicar gran parte de los conocim
 <ul>
 
 <li>
-Arduino. <i>Official Arduino Documentation</i>. Disponible en: 
-:contentReference[oaicite:0]{index=0} 
+Arduino. <i>Official Arduino Documentation</i>. Disponible en:  
+<a href="https://docs.arduino.cc/" target="_blank">https://docs.arduino.cc/</a>  
 [Consulta: mayo 2026].
 </li><br>
 
 <li>
-Arduino. <i>Arduino Reference Language</i>. Disponible en: 
-:contentReference[oaicite:1]{index=1} 
+Arduino. <i>Arduino Reference Language</i>. Disponible en:  
+<a href="https://www.arduino.cc/reference/en/" target="_blank">https://www.arduino.cc/reference/en/</a>  
 [Consulta: mayo 2026].
 </li><br>
 
 <li>
-Arduino. <i>Arduino IDE</i>. Disponible en: 
-:contentReference[oaicite:2]{index=2} 
+Arduino. <i>Arduino IDE</i>. Disponible en:  
+<a href="https://www.arduino.cc/en/software" target="_blank">https://www.arduino.cc/en/software</a>  
 [Consulta: mayo 2026].
 </li><br>
 
 <li>
-:contentReference[oaicite:3]{index=3}. 
-Repositorio utilizado para almacenar vídeos, imágenes y recursos del proyecto. 
+GitHub. Disponible en:  
+<a href="https://github.com/" target="_blank">https://github.com/</a>  
+Repositorio utilizado para almacenar vídeos, imágenes y recursos del proyecto.  
 [Consulta: mayo 2026].
 </li><br>
 
 <li>
-:contentReference[oaicite:4]{index=4}. 
-Herramienta utilizada para la simulación y diseño de circuitos electrónicos con Arduino. 
+Tinkercad. Disponible en:  
+<a href="https://www.tinkercad.com/" target="_blank">https://www.tinkercad.com/</a>  
+Herramienta utilizada para la simulación y diseño de circuitos electrónicos con Arduino.  
 [Consulta: mayo 2026].
 </li><br>
 
 <li>
-:contentReference[oaicite:5]{index=5}. 
-Simulador online utilizado para pruebas y verificación de circuitos y código Arduino. 
+Wokwi Arduino Simulator. Disponible en:  
+<a href="https://wokwi.com/" target="_blank">https://wokwi.com/</a>  
+Simulador online utilizado para pruebas y verificación de circuitos y código Arduino.  
 [Consulta: mayo 2026].
 </li><br>
 
 <li>
-Random Nerd Tutorials. <i>ESP32 Tutorials & Projects</i>. Disponible en: 
-:contentReference[oaicite:6]{index=6} 
+Random Nerd Tutorials. <i>ESP32 Tutorials & Projects</i>. Disponible en:  
+<a href="https://randomnerdtutorials.com/" target="_blank">https://randomnerdtutorials.com/</a>  
 [Consulta: mayo 2026].
 </li><br>
 
 <li>
-:contentReference[oaicite:7]{index=7}. 
-Librería utilizada para el control de pantallas LCD I2C en Arduino. 
+GitHub LiquidCrystal_I2C Library. Disponible en:  
+<a href="https://github.com/johnrickman/LiquidCrystal_I2C" target="_blank">https://github.com/johnrickman/LiquidCrystal_I2C</a>  
+Librería utilizada para el control de pantallas LCD I2C en Arduino.  
 [Consulta: mayo 2026].
 </li><br>
 
 <li>
-:contentReference[oaicite:8]{index=8}. 
-Librería utilizada para la lectura de sensores de temperatura y humedad DHT11/DHT22. 
+DHT Sensor Library for ESPx. Disponible en:  
+<a href="https://github.com/beegee-tokyo/DHTesp" target="_blank">https://github.com/beegee-tokyo/DHTesp</a>  
+Librería utilizada para la lectura de sensores de temperatura y humedad DHT11/DHT22.  
 [Consulta: mayo 2026].
 </li><br>
 
 <li>
-Universidad Rey Juan Carlos. <i>Hucha inteligente cuenta monedas</i>. Disponible en: 
-:contentReference[oaicite:9]{index=9} 
+Universidad Rey Juan Carlos. <i>Hucha inteligente cuenta monedas</i>. Disponible en:  
+<a href="https://blogs.etsii.urjc.es/dseytr/hucha-inteligente-cuenta-monedas/" target="_blank">https://blogs.etsii.urjc.es/dseytr/hucha-inteligente-cuenta-monedas/</a>  
 [Consulta: mayo 2026].
 </li><br>
 
 <li>
-Espressif Systems. <i>ESP32 Documentation</i>. Disponible en: 
-:contentReference[oaicite:10]{index=10} 
+Espressif Systems. <i>ESP32 Documentation</i>. Disponible en:  
+<a href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32/" target="_blank">https://docs.espressif.com/projects/esp-idf/en/latest/esp32/</a>  
 [Consulta: mayo 2026].
 </li><br>
 
 <li>
-:contentReference[oaicite:11]{index=11}. 
-Información general sobre el origen, funcionamiento y modelos de Arduino. 
+Wikipedia. <i>Arduino</i>. Disponible en:  
+<a href="https://es.wikipedia.org/wiki/Arduino" target="_blank">https://es.wikipedia.org/wiki/Arduino</a>  
+Información general sobre el origen, funcionamiento y modelos de Arduino.  
 [Consulta: mayo 2026].
 </li>
 
 </ul>
 
 </details>
-
