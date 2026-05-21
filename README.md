@@ -1088,5 +1088,82 @@ Finalmente, el proyecto final nos ha permitido aplicar gran parte de los conocim
 
 <details>
 <summary><h2>Bibliografía</h2></summary>
+
+<ul>
+
+<li>
+Arduino. <i>Official Arduino Documentation</i>. Disponible en: 
+:contentReference[oaicite:0]{index=0} 
+[Consulta: mayo 2026].
+</li><br>
+
+<li>
+Arduino. <i>Arduino Reference Language</i>. Disponible en: 
+:contentReference[oaicite:1]{index=1} 
+[Consulta: mayo 2026].
+</li><br>
+
+<li>
+Arduino. <i>Arduino IDE</i>. Disponible en: 
+:contentReference[oaicite:2]{index=2} 
+[Consulta: mayo 2026].
+</li><br>
+
+<li>
+:contentReference[oaicite:3]{index=3}. 
+Repositorio utilizado para almacenar vídeos, imágenes y recursos del proyecto. 
+[Consulta: mayo 2026].
+</li><br>
+
+<li>
+:contentReference[oaicite:4]{index=4}. 
+Herramienta utilizada para la simulación y diseño de circuitos electrónicos con Arduino. 
+[Consulta: mayo 2026].
+</li><br>
+
+<li>
+:contentReference[oaicite:5]{index=5}. 
+Simulador online utilizado para pruebas y verificación de circuitos y código Arduino. 
+[Consulta: mayo 2026].
+</li><br>
+
+<li>
+Random Nerd Tutorials. <i>ESP32 Tutorials & Projects</i>. Disponible en: 
+:contentReference[oaicite:6]{index=6} 
+[Consulta: mayo 2026].
+</li><br>
+
+<li>
+:contentReference[oaicite:7]{index=7}. 
+Librería utilizada para el control de pantallas LCD I2C en Arduino. 
+[Consulta: mayo 2026].
+</li><br>
+
+<li>
+:contentReference[oaicite:8]{index=8}. 
+Librería utilizada para la lectura de sensores de temperatura y humedad DHT11/DHT22. 
+[Consulta: mayo 2026].
+</li><br>
+
+<li>
+Universidad Rey Juan Carlos. <i>Hucha inteligente cuenta monedas</i>. Disponible en: 
+:contentReference[oaicite:9]{index=9} 
+[Consulta: mayo 2026].
+</li><br>
+
+<li>
+Espressif Systems. <i>ESP32 Documentation</i>. Disponible en: 
+:contentReference[oaicite:10]{index=10} 
+[Consulta: mayo 2026].
+</li><br>
+
+<li>
+:contentReference[oaicite:11]{index=11}. 
+Información general sobre el origen, funcionamiento y modelos de Arduino. 
+[Consulta: mayo 2026].
+</li>
+
+</ul>
+
 </details>
 
