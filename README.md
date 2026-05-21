@@ -1071,7 +1071,13 @@ A continuación podeis ver el esquema eléctrico de nuestro montaje en arduino. 
 </details>
 <details>
 <summary><h2>Conclusiones</h2></summary>
-.
+<br>En conclusión, gracias a todas las actividades realizadas hemos podido aprender cómo funciona Arduino y comprender mejor tanto la programación como la electrónica básica. A lo largo de las prácticas hemos trabajado con diferentes componentes, como LEDs, botones, sensores, pantallas LCD, conexiones WiFi y barras LED, aprendiendo cómo conectarlos correctamente y cómo programarlos para que hagan distintas funciones.<br><br>
+
+Además, también hemos aprendido a utilizar funciones y estructuras importantes dentro de Arduino IDE, como los bucles, las condiciones, las librerías o las entradas y salidas digitales. Gracias a esto hemos podido entender mejor cómo se comunica la placa con los distintos componentes y cómo automatizar acciones mediante código.<br><br>
+
+Consideramos que Arduino es una herramienta muy útil para principiantes, ya que permite aprender programación y electrónica de una forma sencilla, práctica y bastante accesible. También nos ha servido para mejorar nuestra lógica de programación y nuestra capacidad para detectar y solucionar errores tanto en el código como en los circuitos.<br><br>
+
+Finalmente, el proyecto final nos ha permitido aplicar gran parte de los conocimientos aprendidos durante todas las actividades. Aunque hemos encontrado algunas dificultades, especialmente a la hora de programar desde cero y montar el mecanismo del dedo robótico, hemos conseguido comprender mucho mejor cómo desarrollar un proyecto completo utilizando Arduino, combinando programación, automatización y montaje físico de componentes electrónicos.<br>
 </details>
 
 <details>
