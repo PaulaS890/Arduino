@@ -6,10 +6,16 @@
 
 <details>
 <summary><h2>Introducción</h2></summary>
+<br>Arduino es una plataforma de desarrollo electrónico y programación que permite crear proyectos tecnológicos de forma sencilla y accesible. Gracias a su facilidad de uso y a la gran variedad de componentes compatibles, se ha convertido en una de las herramientas más utilizadas para aprender electrónica, robótica y automatización.<br><br>
+
+A lo largo de este trabajo realizaremos diferentes actividades prácticas relacionadas con Arduino, donde aprenderemos a utilizar LEDs, botones, sensores, pantallas LCD, conexiones WiFi y otros componentes electrónicos. Además, también aprenderemos a programar utilizando Arduino IDE y el lenguaje de programación C/C + +, comprendiendo cómo funciona la comunicación entre hardware y software.<br><br>
+
+El objetivo principal de estas prácticas es aprender de forma dinámica y práctica cómo funciona Arduino, desarrollando pequeños proyectos y circuitos que nos permitan mejorar nuestros conocimientos sobre programación, electrónica y automatización.<br>
 </details>
 
 <details>
 <summary><h2>Objetivos</h2></summary>
+<ul> <li>Aprender qué es Arduino y comprender cómo funciona una placa programable.</li><br> <li>Conocer el uso de Arduino IDE y aprender a programar utilizando el lenguaje C/C + +.</li><br> <li>Aprender a montar circuitos electrónicos básicos utilizando LEDs, resistencias, botones y sensores.</li><br> <li>Comprender cómo funcionan las entradas y salidas digitales de Arduino.</li><br> <li>Aprender a utilizar diferentes componentes electrónicos como LEDs RGB, pantallas LCD, sensores de temperatura y módulos WiFi.</li><br> <li>Desarrollar la lógica de programación mediante el uso de bucles, condiciones y funciones.</li><br> <li>Aprender a detectar y solucionar errores tanto en el código como en los circuitos electrónicos.</li><br> <li>Aplicar todos los conocimientos aprendidos en un proyecto final funcional utilizando Arduino.</li> </ul>
 </details>
 
 <details>
