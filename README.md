@@ -1074,6 +1074,13 @@ A continuación podeis ver el esquema eléctrico de nuestro montaje en arduino. 
 
 <img width="593" height="655" alt="image" src="https://github.com/user-attachments/assets/681c3186-e1b3-4096-8faa-655510307363" />
 
+### Resultado final
+
+Aquí podéis ver unas cuantas imágenes de como quedó el resultado final del proyecto:
+<img width="899" height="1599" alt="image" src="https://github.com/user-attachments/assets/6a7e6c98-01a0-483b-a7ab-450e761adbc4" />
+<img width="899" height="1599" alt="image" src="https://github.com/user-attachments/assets/4f147664-c597-4d78-9f48-334bd3f017d8" />
+https://github.com/user-attachments/assets/c76066e9-1875-4592-8c14-bdbbaca6ace7
+
 </details>
 <details>
 <summary><h2>Conclusiones</h2></summary>
