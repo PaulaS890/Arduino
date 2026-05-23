@@ -1074,6 +1074,65 @@ A continuación podeis ver el esquema eléctrico de nuestro montaje en arduino. 
 
 <img width="593" height="655" alt="image" src="https://github.com/user-attachments/assets/681c3186-e1b3-4096-8faa-655510307363" />
 
+### Código
+
+```
+#include <ESP32Servo.h>
+
+#define JOYSTICK_Y_PIN 35
+#define SERVO_PIN 13
+
+Servo dedoServo;
+
+int valorY;
+int valorCentralY = 2048;
+const int UMBRAL = 800;
+bool dedoExtendido = false;
+bool palancaActivada = false;
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(JOYSTICK_Y_PIN, INPUT);
+  dedoServo.attach(SERVO_PIN);
+  dedoServo.write(0); // Dedo guardado
+
+  // Calibración rápida
+  valorCentralY = analogRead(JOYSTICK_Y_PIN);
+
+  Serial.println("Listo");
+}
+
+void loop() {
+  valorY = analogRead(JOYSTICK_Y_PIN);
+
+  // Verificar estado de la palanca
+  bool estadoPalanca = (abs(valorY - valorCentralY) > UMBRAL);
+
+  if (estadoPalanca != palancaActivada) {
+    palancaActivada = estadoPalanca;
+
+    if (palancaActivada) {
+      Serial.println("PALANCA ACTIVADA");
+
+      // Alternar estado del dedo
+      if (!dedoExtendido) {
+        dedoServo.write(90);  // Extender
+        dedoExtendido = true;
+      } else {
+        dedoServo.write(0);   // Guardar
+        dedoExtendido = false;
+      }
+
+      delay(500); // Esperar antes de permitir otro movimiento
+    } else {
+      Serial.println("PALANCA EN REPOSO");
+    }
+  }
+
+  delay(50);
+}
+```
+
 ### Resultado final
 
 Aquí podéis ver unas cuantas imágenes de como quedó el resultado final del proyecto:
